@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSharpLucasWesselEindOpdracht"
         mc:Ignorable="d"
-        Title="MainWindow" Height="151" Width="239">
+        Title="MainWindow" Height="163" Width="265">
     <Grid Margin="0,0,0,1">
         <Label Content="IP:" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.098,0.498"/>
         <TextBox HorizontalAlignment="Left" Margin="38,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134"/>
-        <Button Content="Connect" HorizontalAlignment="Left" Margin="177,51,0,0" VerticalAlignment="Top" Width="52" Click="Button_Click_1" Height="18"/>
+        <Button Content="Connect" HorizontalAlignment="Left" Margin="177,51,0,0" VerticalAlignment="Top" Width="52" Height="18"/>
         <Label Content="Connect To Game" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Width="219"/>
         <Button Content="Host Game" HorizontalAlignment="Center" Margin="0,79,0,0" VerticalAlignment="Top" Width="151"/>
     </Grid>
