@@ -1,0 +1,17 @@
+C:\SCHOOL\Technische Informatica\C#\fujas\fujas\bin\Debug\net6.0-windows\fujas.exe
+C:\SCHOOL\Technische Informatica\C#\fujas\fujas\bin\Debug\net6.0-windows\fujas.deps.json
+C:\SCHOOL\Technische Informatica\C#\fujas\fujas\bin\Debug\net6.0-windows\fujas.runtimeconfig.json
+C:\SCHOOL\Technische Informatica\C#\fujas\fujas\bin\Debug\net6.0-windows\fujas.dll
+C:\SCHOOL\Technische Informatica\C#\fujas\fujas\bin\Debug\net6.0-windows\fujas.pdb
+C:\SCHOOL\Technische Informatica\C#\fujas\fujas\obj\Debug\net6.0-windows\fujas.Form1.resources
+C:\SCHOOL\Technische Informatica\C#\fujas\fujas\obj\Debug\net6.0-windows\fujas.Game.resources
+C:\SCHOOL\Technische Informatica\C#\fujas\fujas\obj\Debug\net6.0-windows\fujas.csproj.GenerateResource.cache
+C:\SCHOOL\Technische Informatica\C#\fujas\fujas\obj\Debug\net6.0-windows\fujas.GeneratedMSBuildEditorConfig.editorconfig
+C:\SCHOOL\Technische Informatica\C#\fujas\fujas\obj\Debug\net6.0-windows\fujas.AssemblyInfoInputs.cache
+C:\SCHOOL\Technische Informatica\C#\fujas\fujas\obj\Debug\net6.0-windows\fujas.AssemblyInfo.cs
+C:\SCHOOL\Technische Informatica\C#\fujas\fujas\obj\Debug\net6.0-windows\fujas.csproj.CoreCompileInputs.cache
+C:\SCHOOL\Technische Informatica\C#\fujas\fujas\obj\Debug\net6.0-windows\fujas.dll
+C:\SCHOOL\Technische Informatica\C#\fujas\fujas\obj\Debug\net6.0-windows\refint\fujas.dll
+C:\SCHOOL\Technische Informatica\C#\fujas\fujas\obj\Debug\net6.0-windows\fujas.pdb
+C:\SCHOOL\Technische Informatica\C#\fujas\fujas\obj\Debug\net6.0-windows\fujas.genruntimeconfig.cache
+C:\SCHOOL\Technische Informatica\C#\fujas\fujas\obj\Debug\net6.0-windows\ref\fujas.dll
