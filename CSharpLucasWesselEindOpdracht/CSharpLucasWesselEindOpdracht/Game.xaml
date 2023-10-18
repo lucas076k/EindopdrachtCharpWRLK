@@ -7,15 +7,15 @@
         mc:Ignorable="d"
         Title="Game" Height="248" Width="185">
     <Grid>
-        <Label Content="Your Turn!" HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top"/>
-        <Button Name = "Button1" Content="" HorizontalAlignment="Left" Margin="21,66,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
-        <Button Name = "Button2" Content="" HorizontalAlignment="Left" Margin="72,66,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
-        <Button Name = "Button3" Content="" HorizontalAlignment="Left" Margin="123,66,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
-        <Button Name = "Button4" Content="" HorizontalAlignment="Left" Margin="21,117,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
-        <Button Name = "Button5" Content="" HorizontalAlignment="Left" Margin="72,117,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
-        <Button Name = "Button6" Content="" HorizontalAlignment="Left" Margin="123,117,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
-        <Button Name = "Button7" Content="" HorizontalAlignment="Left" Margin="21,170,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
-        <Button Name = "Button8" Content="" HorizontalAlignment="Left" Margin="72,170,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
-        <Button Name = "Button9" Content="" HorizontalAlignment="Left" Margin="123,170,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
+        <Label Name ="label1" Content="Your Turn!" HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top"/>
+        <Button Name = "button1" Content="" HorizontalAlignment="Left" Margin="21,66,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
+        <Button Name = "button2" Content="" HorizontalAlignment="Left" Margin="72,66,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
+        <Button Name = "button3" Content="" HorizontalAlignment="Left" Margin="123,66,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
+        <Button Name = "button4" Content="" HorizontalAlignment="Left" Margin="21,117,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
+        <Button Name = "button5" Content="" HorizontalAlignment="Left" Margin="72,117,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
+        <Button Name = "button6" Content="" HorizontalAlignment="Left" Margin="123,117,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
+        <Button Name = "button7" Content="" HorizontalAlignment="Left" Margin="21,170,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
+        <Button Name = "button8" Content="" HorizontalAlignment="Left" Margin="72,170,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
+        <Button Name = "button9" Content="" HorizontalAlignment="Left" Margin="123,170,0,0" VerticalAlignment="Top" Height="40" Width="40"/>
     </Grid>
 </Window>
