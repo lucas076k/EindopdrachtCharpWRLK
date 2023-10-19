@@ -1,5 +1,3 @@
-        public MainWindow(string clientUsername)
-            this.clientUsername = clientUsername;
 using System;
 using System.IO;
 using System.Net;
@@ -20,13 +18,13 @@ namespace Client
         private string clientUsername;
         private Thread receiveThread;
         
-        public MainWindow()
+        public MainWindow(string clientUsername)
         {
             InitializeComponent();
             client = new TcpClient();
             client.Connect("localhost", 8888);
             stream = client.GetStream();
-            clientUsername = "Bas";
+            this.clientUsername = clientUsername;;
 
             receiveThread = new Thread(ReceiveMessages);
             receiveThread.Start();
