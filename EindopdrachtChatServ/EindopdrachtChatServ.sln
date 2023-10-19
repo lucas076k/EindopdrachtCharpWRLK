@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{D8AAE087-CC06-4D5C-B021-7C0E087B06ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientChat", "ClientChat\ClientChat.csproj", "{3FDC88A5-6776-4990-A462-4F7E03954E35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8AAE087-CC06-4D5C-B021-7C0E087B06ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8AAE087-CC06-4D5C-B021-7C0E087B06ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8AAE087-CC06-4D5C-B021-7C0E087B06ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8AAE087-CC06-4D5C-B021-7C0E087B06ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FDC88A5-6776-4990-A462-4F7E03954E35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FDC88A5-6776-4990-A462-4F7E03954E35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FDC88A5-6776-4990-A462-4F7E03954E35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FDC88A5-6776-4990-A462-4F7E03954E35}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
