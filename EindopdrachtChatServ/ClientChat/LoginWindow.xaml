@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="LoginWindow" Height="450" Width="800">
     <Grid>
-        <TextBox Name="UserTextBox" Width="200" Height="50" Margin="200, 100, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+        <TextBlock Name="WelcomeTextBlock" Width="100" Height="24" Margin="350, 70, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Top" Text="Welcome!" FontSize="20" FontWeight="Bold"></TextBlock>
+        <TextBlock Name="FillTextBlock" Width="200" Height="24" Margin="300, 96, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Top" Text="Please fill in your name." FontSize="18" FontWeight="DemiBold"></TextBlock>
+        <TextBlock Name="NoteTextBlock" Width="450" Height="24" Margin="180, 120, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Top" Text="(Note: Everyone can see the name you are using so consider to not use your real name.)" FontSize="11"></TextBlock>
+        <TextBlock Name="UserTextBlock" Width="100" Height="24" Margin="350, 150, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Top" Text="Username:" FontSize="20" FontWeight="Bold"></TextBlock>
+        <TextBox Name="UserTextBox" Width="200" Height="24" Margin="300, 180, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBox>
+        <Button x:Name="LoginButton" Width="150" Height="50" Margin="325, 284, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="LoginButton_OnClick" Background="CornflowerBlue" Content="Login" FontSize="16" FontWeight="Bold"></Button>
     </Grid>
 </Window>

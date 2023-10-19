@@ -8,4 +8,16 @@ public partial class LoginWindow : Window
     {
         InitializeComponent();
     }
+    
+    
+    
+    private void LoginButton_OnClick(object sender, RoutedEventArgs e)
+    {
+        //Closes LoginWindow.xaml and opens MainWindow.xaml
+        MainWindow mainWindow = new MainWindow();
+        mainWindow.Show();
+        this.Close();
+        
+    }
+    
 }

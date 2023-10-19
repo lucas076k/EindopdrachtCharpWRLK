@@ -41,7 +41,7 @@ namespace ClientChat
 
         private void SendButton_Click(object sender, RoutedEventArgs e) 
         {
-            string message = messageTextBox.Text;
+            string message = messageTextBox.Text; //TODO Fix deze shit met Regex
             byte[] buffer = Encoding.ASCII.GetBytes(message);
             stream.Write(buffer, 0, buffer.Length);
 
@@ -50,7 +50,7 @@ namespace ClientChat
 
             // Sends message to other clients
             SendToServer(message);
-
+            
             messageTextBox.Clear();
         }
 
