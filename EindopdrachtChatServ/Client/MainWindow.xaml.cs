@@ -1,3 +1,5 @@
+        public MainWindow(string clientUsername)
+            this.clientUsername = clientUsername;
 using System;
 using System.IO;
 using System.Net;
