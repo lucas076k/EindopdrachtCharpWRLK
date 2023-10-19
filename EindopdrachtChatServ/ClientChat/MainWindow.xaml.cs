@@ -45,10 +45,10 @@ namespace ClientChat
             byte[] buffer = Encoding.ASCII.GetBytes(message);
             stream.Write(buffer, 0, buffer.Length);
 
-            // Voeg het bericht toe aan de ListBox
+            // Adds message to ListBox
             Dispatcher.Invoke(() => { chatListBox.Items.Add("You: " + message); });
 
-            // Stuur het bericht naar andere clients
+            // Sends message to other clients
             SendToServer(message);
 
             messageTextBox.Clear();
