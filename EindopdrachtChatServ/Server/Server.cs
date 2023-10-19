@@ -31,7 +31,6 @@ class Server
     {
         TcpClient client = (TcpClient)obj;
         NetworkStream stream = client.GetStream();
-        string clientAddress = ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString();
         
 
         while (true)
@@ -40,7 +39,7 @@ class Server
             int bytesRead = stream.Read(buffer, 0, buffer.Length);
             string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
 
-            Console.WriteLine("Received from " + clientAddress + ": " + message);
+            Console.WriteLine(message);
 
             foreach (TcpClient c in clients)
             {

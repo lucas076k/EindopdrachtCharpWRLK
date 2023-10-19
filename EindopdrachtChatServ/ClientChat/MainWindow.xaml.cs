@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace ClientChat
 {
@@ -12,16 +13,16 @@ namespace ClientChat
     {
         private TcpClient client;
         private NetworkStream stream;
-        private string clientAddress;
+        private string clientUsername;
         private Thread receiveThread;
-
+        
         public MainWindow()
         {
             InitializeComponent();
             client = new TcpClient();
             client.Connect("localhost", 8888);
             stream = client.GetStream();
-            clientAddress = ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString();
+            clientUsername = "Bas";
 
             receiveThread = new Thread(ReceiveMessages);
             receiveThread.Start();
@@ -35,23 +36,23 @@ namespace ClientChat
                 int bytesRead = stream.Read(buffer, 0, buffer.Length);
                 string message = Encoding.ASCII.GetString(buffer, 0, bytesRead);
 
-                Dispatcher.Invoke(() => { chatListBox.Items.Add(clientAddress + ": " + message); });
+                Dispatcher.Invoke(() => { chatListBox.Items.Add(message); });
+                
             }
         }
 
-        private void SendButton_Click(object sender, RoutedEventArgs e) 
+        private void SendMessage(object sender, RoutedEventArgs e) 
         {
             string message = messageTextBox.Text;
-            byte[] buffer = Encoding.ASCII.GetBytes(message);
-            stream.Write(buffer, 0, buffer.Length);
             
             bool whiteLine = string.IsNullOrWhiteSpace(message);
             if (!whiteLine)
             {
                 // Adds message to ListBox
                 Dispatcher.Invoke(() => { chatListBox.Items.Add("You: " + message); });
+                
                 // Sends message to other clients
-                SendToServer(message);
+                SendToServer(clientUsername + ": " + message);
             }
             
 
@@ -71,5 +72,14 @@ namespace ClientChat
                 MessageBox.Show("Fout bij het verzenden van bericht naar server: " + ex.Message);
             }
         }
+
+        private void EnterPressed(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                SendMessage(sender, e);
+            }
+        }
+
     }
 }

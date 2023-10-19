@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClientChat"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Chat" Height="500" Width="300">
     <Grid>
-        <ListBox Name="chatListBox" Width="200" Height="300" HorizontalAlignment="Left" VerticalAlignment="Top"></ListBox>
-        <TextBox Name="messageTextBox" Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Bottom"></TextBox>
-        <Button x:Name="SendButton" Content="Send" Click="SendButton_Click" Width="100" Height="50" ></Button>
+        <ScrollViewer>
+        <ListBox Name="chatListBox" Width="300" Height="450" HorizontalAlignment="Left" VerticalAlignment="Top"></ListBox>
+        </ScrollViewer>
+        <TextBox Name="messageTextBox" Width="240" Height="50" HorizontalAlignment="Left" VerticalAlignment="Bottom" KeyDown="EnterPressed"></TextBox>
+        <Button x:Name="sendButton" Content="Send" Click="SendMessage" Width="60" Height="50" HorizontalAlignment="Right" VerticalAlignment="Bottom"></Button>
     </Grid>
 </Window>
