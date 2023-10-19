@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace ClientChat;
+namespace Client;
 
 public partial class LoginWindow : Window
 {
