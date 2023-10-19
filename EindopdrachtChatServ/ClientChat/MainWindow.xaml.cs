@@ -44,12 +44,16 @@ namespace ClientChat
             string message = messageTextBox.Text;
             byte[] buffer = Encoding.ASCII.GetBytes(message);
             stream.Write(buffer, 0, buffer.Length);
-
-            // Adds message to ListBox
-            Dispatcher.Invoke(() => { chatListBox.Items.Add("You: " + message); });
-
-            // Sends message to other clients
-            SendToServer(message);
+            
+            bool whiteLine = string.IsNullOrWhiteSpace(message);
+            if (!whiteLine)
+            {
+                // Adds message to ListBox
+                Dispatcher.Invoke(() => { chatListBox.Items.Add("You: " + message); });
+                // Sends message to other clients
+                SendToServer(message);
+            }
+            
 
             messageTextBox.Clear();
         }
