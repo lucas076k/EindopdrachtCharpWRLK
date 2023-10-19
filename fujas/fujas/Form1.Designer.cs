@@ -19,7 +19,7 @@
             }
             base.Dispose(disposing);
         }
-
+        //level 1 gyat
         #region Windows Form Designer generated code
 
         /// <summary>

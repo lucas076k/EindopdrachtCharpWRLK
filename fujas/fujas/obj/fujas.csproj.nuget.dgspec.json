@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\SCHOOL\\Technische Informatica\\C#\\fujas\\fujas\\fujas.csproj": {}
+    "C:\\SCHOOL\\Technische Informatica\\C#\\EindopdrachtCsharpWRLK\\fujas\\fujas\\fujas.csproj": {}
   },
   "projects": {
-    "C:\\SCHOOL\\Technische Informatica\\C#\\fujas\\fujas\\fujas.csproj": {
+    "C:\\SCHOOL\\Technische Informatica\\C#\\EindopdrachtCsharpWRLK\\fujas\\fujas\\fujas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SCHOOL\\Technische Informatica\\C#\\fujas\\fujas\\fujas.csproj",
+        "projectUniqueName": "C:\\SCHOOL\\Technische Informatica\\C#\\EindopdrachtCsharpWRLK\\fujas\\fujas\\fujas.csproj",
         "projectName": "fujas",
-        "projectPath": "C:\\SCHOOL\\Technische Informatica\\C#\\fujas\\fujas\\fujas.csproj",
+        "projectPath": "C:\\SCHOOL\\Technische Informatica\\C#\\EindopdrachtCsharpWRLK\\fujas\\fujas\\fujas.csproj",
         "packagesPath": "C:\\Users\\Wessel\\.nuget\\packages\\",
-        "outputPath": "C:\\SCHOOL\\Technische Informatica\\C#\\fujas\\fujas\\obj\\",
+        "outputPath": "C:\\SCHOOL\\Technische Informatica\\C#\\EindopdrachtCsharpWRLK\\fujas\\fujas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
