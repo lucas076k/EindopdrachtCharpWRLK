@@ -32,6 +32,7 @@ class Server
         TcpClient client = (TcpClient)obj;
         NetworkStream stream = client.GetStream();
         string clientAddress = ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString();
+        
 
         while (true)
         {
