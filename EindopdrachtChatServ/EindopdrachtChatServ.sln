@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{D8AAE087-CC06-4D5C-B021-7C0E087B06ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientChat", "ClientChat\ClientChat.csproj", "{3FDC88A5-6776-4990-A462-4F7E03954E35}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{3FDC88A5-6776-4990-A462-4F7E03954E35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
