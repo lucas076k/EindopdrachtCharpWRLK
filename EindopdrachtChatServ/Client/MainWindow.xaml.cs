@@ -77,7 +77,6 @@ namespace Client
             }
             catch (Exception ex)
             {
-                // Handel eventuele uitzonderingen af
                 MessageBox.Show("Fout bij het verzenden van bericht naar server: " + ex.Message);
             }
         }

@@ -13,7 +13,6 @@ public partial class LoginWindow : Window
     
     private void LoginButton_OnClick(object sender, RoutedEventArgs e)
     {
-        //Closes LoginWindow.xaml and opens MainWindow.xaml
         if (!string.IsNullOrWhiteSpace(UserTextBox.Text))
         {
             MainWindow mainWindow = new MainWindow(UserTextBox.Text);
