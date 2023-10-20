@@ -21,6 +21,7 @@ class Server
         File.WriteAllText(filePath, "Welkom in de chat! \n");
         server = new TcpListener(IPAddress.Any, 8888);
         server.Start();
+        Console.WriteLine("Server started succesfully!");
 
         while (true)
         {
