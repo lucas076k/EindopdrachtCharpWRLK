@@ -7,9 +7,7 @@
         mc:Ignorable="d"
         Title="Chat" Height="500" Width="300">
     <Grid>
-        <ScrollViewer>
         <ListBox Name="chatListBox" Width="280" Height="413" HorizontalAlignment="Left" VerticalAlignment="Top"></ListBox>
-        </ScrollViewer>
         <TextBox Name="messageTextBox" Width="240" Height="50" HorizontalAlignment="Left" VerticalAlignment="Bottom" KeyDown="EnterPressed"></TextBox>
         <Button x:Name="sendButton" Content="Send" Click="SendMessage" Width="60" Height="50" HorizontalAlignment="Right" VerticalAlignment="Bottom"></Button>
     </Grid>
