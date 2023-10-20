@@ -25,17 +25,11 @@ public class ClientTests
             {
                 string message = "Test message";
                 byte[] messageBytes = Encoding.ASCII.GetBytes(message);
-
-                // Stuur het bericht naar de server
+                
                 stream.Write(messageBytes, 0, messageBytes.Length);
 
                 //Delay to process the message
                 Thread.Sleep(1000);
-
-                // Hier zou je kunnen verifiëren dat het bericht correct is ontvangen en verwerkt door de server
-                // Bijvoorbeeld, controleer of het bericht verschijnt in de lijst met chatberichten op de server.
-
-                // Als het bericht correct wordt verwerkt, slaagt de test.
             }
         }
         catch (Exception ex)
@@ -47,32 +41,25 @@ public class ClientTests
     [Test]
     public void ReceiveMessagesFromServer()
     {
-        // Arrange
         int serverPort = 8888;
         string serverMessage = "Hello from the server";
-
-        // Start een simulatie van een server met TcpListener
+        
         TcpListener serverListener = new TcpListener(IPAddress.Loopback, serverPort);
         serverListener.Start();
-
-        // Simuleer een client die verbinding maakt met de server
+        
         TcpClient client = new TcpClient();
         client.Connect(IPAddress.Loopback, serverPort);
         
-        // Simuleer het verzenden van een bericht van de server naar de client
         byte[] serverMessageBytes = Encoding.ASCII.GetBytes(serverMessage);
         client.GetStream().Write(serverMessageBytes, 0, serverMessageBytes.Length);
-
-        // Act - Lees het bericht van de client
+        
         TcpClient serverClient = serverListener.AcceptTcpClient();
         byte[] receivedMessageBytes = new byte[1024];
         int bytesRead = serverClient.GetStream().Read(receivedMessageBytes, 0, receivedMessageBytes.Length);
         string receivedMessage = Encoding.ASCII.GetString(receivedMessageBytes, 0, bytesRead);
-
-        // Assert
+        
         Assert.That(serverMessage, Is.EqualTo(receivedMessage));
-
-        // Opruimen
+        
         serverClient.Close();
         client.Close();
         serverListener.Stop();

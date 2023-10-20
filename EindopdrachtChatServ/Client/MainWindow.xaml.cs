@@ -61,7 +61,6 @@ namespace Client
             if (!whiteLine)
             {
                 Dispatcher.Invoke(() => { chatListBox.Items.Add("You: " + message); });
-                
                 SendToServer(clientUsername + ": " + message);
             }
             
@@ -78,7 +77,6 @@ namespace Client
             }
             catch (Exception ex)
             {
-                // Handel eventuele uitzonderingen af
                 MessageBox.Show("Fout bij het verzenden van bericht naar server: " + ex.Message);
             }
         }
@@ -90,6 +88,5 @@ namespace Client
                 SendMessage(sender, e);
             }
         }
-
     }
 }

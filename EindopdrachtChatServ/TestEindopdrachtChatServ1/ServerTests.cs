@@ -29,7 +29,6 @@ public class ServerTests
             TcpListener server = new TcpListener(IPAddress.Any, Port);
             server.Start();
 
-            // Check if the server is actively listening on the specified port.
             Assert.IsTrue(server.Server.IsBound);
 
             server.Stop();
