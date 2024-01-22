@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0WFuON4trtj2Ijcf/qWHeeAsY6hjo04nMwtd8WG50HW+oFO8+DKXFm0PI1q9Hw+nn20AodvslXwvTIjipuWBfA==",
+  "dgSpecHash": "72WEWPl2O0QsB/HmiBjDoF8tUj+WyUbQpc0pZB9hEGWfPiShcHxgHhvgDQEsr5nLte3HnJ2y6GUmH8Rp2BAmGw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucas\\Desktop\\OneDrive\\Avans Jaar 2 (2023 - 2024\\Programmeren_in_Csharp\\EindopdrachtCsharpWRLK\\EindopdrachtChatServ\\TestEindopdrachtChatServ1\\TestEindopdrachtChatServ1.csproj",
+  "projectFilePath": "C:\\Users\\lucas\\Desktop\\OneDrive\\Avans Jaar 2 (2023 - 2024\\Periode1\\Programmeren_in_Csharp\\EindopdrachtCsharpWRLK\\EindopdrachtChatServ\\TestEindopdrachtChatServ1\\TestEindopdrachtChatServ1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.codecoverage\\17.6.0\\microsoft.codecoverage.17.6.0.nupkg.sha512",

@@ -1,14 +1,9 @@
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Net;
-using System.Net.Security;
+using System.Collections;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
 
 namespace Client
@@ -19,7 +14,9 @@ namespace Client
         private NetworkStream stream;
         private string clientUsername;
         private Thread receiveThread;
-        
+        private String toBeGuessWord;
+        private String guessWord;
+
         public MainWindow(string clientUsername)
         {
             InitializeComponent();
@@ -58,14 +55,74 @@ namespace Client
             string message = messageTextBox.Text;
             
             bool whiteLine = string.IsNullOrWhiteSpace(message);
-            if (!whiteLine)
+            if (!whiteLine && !message.StartsWith("/game") && !message.StartsWith("/guess"))
             {
                 Dispatcher.Invoke(() => { chatListBox.Items.Add("You: " + message); });
                 SendToServer(clientUsername + ": " + message);
             }
+
+            if (message.StartsWith("/game"))
+            {
+                //Hieronder wordt het woord doorgegeven wat geraden moet worden.
+                StartWordGame(message.Substring(6));
+            }
+
+            if (message.StartsWith("/guess"))
+            {
+                GuessWord(message.Substring(7));
+                
+            }
             
 
             messageTextBox.Clear();
+        }
+
+        private void GuessWord(String guessWord)
+        {
+            this.guessWord = guessWord;
+            Dispatcher.Invoke(() => { chatListBox.Items.Add("You guessed: " + this.guessWord); });
+            SendToServer(clientUsername + " guessed: " + this.guessWord);
+            
+            //Hieronder komt de logica zodat de woorden vergeleken kunnen worden.
+            ArrayList letters = new ArrayList();
+            string correctLetters = "";
+            for (int i = 0; i < this.guessWord.Length; i++)
+            {
+                char letter = this.guessWord[i];
+                letters.Add(letter);
+            }
+
+            foreach (char listLetter in letters)
+            {
+                if (toBeGuessWord.Contains(listLetter))
+                {
+                    correctLetters += + listLetter + " ";
+                }
+            }
+            
+            Dispatcher.Invoke(() => { chatListBox.Items.Add("You got letter(s): " + letters); });
+            SendToServer(clientUsername + " got letter(s): " + letters);
+            
+            if (guessWord == toBeGuessWord)
+            {
+                Dispatcher.Invoke(() => { chatListBox.Items.Add("You won! The word was: " + toBeGuessWord); });
+                SendToServer(clientUsername + " guessed: " + toBeGuessWord);
+            }
+            // else if (guessWord != toBeGuessWord)
+            // {
+            //     
+            // }
+        }
+
+        private void StartWordGame(String word)
+        {
+            toBeGuessWord = word;
+            Dispatcher.Invoke(() => { chatListBox.Items.Add("(Only you can see this)\nWord to be guessed: " + toBeGuessWord); });
+            
+            //Hieronder gaat het woord in letters gesplits worden zodat ze vergeleken kunnen worden.
+            
+            
+            
         }
 
         private void SendToServer(string message)
