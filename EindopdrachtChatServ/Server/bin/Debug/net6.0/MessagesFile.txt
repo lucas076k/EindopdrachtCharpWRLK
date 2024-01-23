@@ -1,0 +1,4 @@
+Welkom in de chat! 
+A has joined the chat
+B has joined the chat
+B guessed: fiets
