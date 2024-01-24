@@ -7,8 +7,17 @@
         mc:Ignorable="d"
         Title="Chat" Height="500" Width="300">
     <Grid>
-        <ListBox Name="chatListBox" Width="280" Height="413" HorizontalAlignment="Left" VerticalAlignment="Top"></ListBox>
-        <TextBox Name="messageTextBox" Width="240" Height="50" HorizontalAlignment="Left" VerticalAlignment="Bottom" KeyDown="EnterPressed"></TextBox>
-        <Button x:Name="sendButton" Content="Send" Click="SendMessage" Width="60" Height="50" HorizontalAlignment="Right" VerticalAlignment="Bottom"></Button>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListBox Grid.Column="0" Name="chatListBox"></ListBox>
+        <TextBox Grid.Row="1" Name="messageTextBox" KeyDown="EnterPressed"></TextBox>
+        <Button Grid.Column="1" Grid.Row="1" x:Name="sendButton" Content="Send" Click="SendMessage"></Button>
+        
     </Grid>
 </Window>
