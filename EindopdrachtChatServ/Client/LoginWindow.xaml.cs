@@ -13,8 +13,9 @@ public partial class LoginWindow : Window
     
     private void LoginButton_OnClick(object sender, RoutedEventArgs e)
     {
+        HelpClass helpClass = new HelpClass();
         //Closes LoginWindow.xaml and opens MainWindow.xaml
-        if (!string.IsNullOrWhiteSpace(UserTextBox.Text))
+        if (helpClass.ReturnTrueIfNotEmpty(UserTextBox.Text))
         {
             MainWindow mainWindow = new MainWindow(UserTextBox.Text);
             mainWindow.Show();
@@ -25,5 +26,7 @@ public partial class LoginWindow : Window
             MessageBox.Show("Fill in a username before you login to the server!", "Invalid username.", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
+
+    
     
 }

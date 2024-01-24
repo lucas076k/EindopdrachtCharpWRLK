@@ -1,10 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{D8AAE087-CC06-4D5C-B021-7C0E087B06ED}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{D8AAE087-CC06-4D5C-B021-7C0E087B06ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{3FDC88A5-6776-4990-A462-4F7E03954E35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{3FDC88A5-6776-4990-A462-4F7E03954E35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEindopdrachtChatServ1", "TestEindopdrachtChatServ1\TestEindopdrachtChatServ1.csproj", "{EBC483EB-C74E-421D-84D9-8DF347105300}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestEindopdrachtChatServ1", "TestEindopdrachtChatServ1\TestEindopdrachtChatServ1.csproj", "{EBC483EB-C74E-421D-84D9-8DF347105300}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +27,11 @@ Global
 		{EBC483EB-C74E-421D-84D9-8DF347105300}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBC483EB-C74E-421D-84D9-8DF347105300}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBC483EB-C74E-421D-84D9-8DF347105300}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B2BBA7A-AC9B-479E-85C7-BF9D97E1136D}
 	EndGlobalSection
 EndGlobal
